@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit";
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: hsl(0, 0%, 90%);
+  margin: 30px 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: hsl(212, 27%, 19%);
+  margin-bottom: 0;
+}
+p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Outfit", serif;
+  color: hsl(30, 10%, 34%);
+}
+.container {
+  max-width: 1110px;
+  width: 40%;
+  margin: auto;
+  margin-top: 120px;
+  padding: 40px;
+  background-color: hsl(0, 0%, 100%);
+  height: 100%;
+  border-radius: 30px;
+}
+
+.preparation-time {
+  margin-top: 30px;
+  background-color: hsl(323, 80%, 98%);
+  padding: 20px;
+  border-radius: 15px;
+}
+.preparation-time h3 {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  color: hsl(332, 51%, 32%);
+  margin: 0px;
+}
+.preparation-time ul {
+  padding-left: 30px;
+  margin-top: 15px;
+  color: hsl(332, 51%, 32%);
+}
+.preparation-time li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  padding-left: 10px;
+}
+.preparation-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.preparation-time li strong {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-weight: 500;
+}
+
+.ingredients {
+  margin-top: 30px;
+}
+
+.ingredients h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: hsl(14, 45%, 36%);
+  margin: 0px;
+  font-size: 30px;
+}
+
+.ingredients ul {
+  padding-left: 0px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-family: "Outfit", serif;
+  color: hsl(30, 10%, 34%);
+}
+
+.ingredients li {
+  margin-bottom: 8px;
+  padding-left: 10px;
+  list-style-type: square;
+  font-size: 16px;
+}
+
+.ingredients li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 12px;
+}
+
+.instructions h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: hsl(14, 45%, 36%);
+  margin: 0px;
+  font-size: 30px;
+}
