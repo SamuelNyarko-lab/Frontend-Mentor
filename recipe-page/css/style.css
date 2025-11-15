@@ -23,16 +23,11 @@ body {
 }
 hr {
   border: none;
-  height: 2px;
+  height: 1.5px;
   background-color: hsl(0, 0%, 90%);
   margin: 30px 0;
 }
 
-img {
-  width: 100%;
-  border-radius: 20px;
-  height: auto;
-}
 h1 {
   font-family: "Young Serif", serif;
   font-weight: 600;
@@ -41,21 +36,32 @@ h1 {
   margin-bottom: 0;
 }
 p {
-  /* margin-top: 20px; */
   font-size: 16px;
   font-family: "Outfit", serif;
   color: hsl(30, 10%, 34%);
 }
 .container {
-  max-width: 50%;
-  width: 50%;
-  min-width: 50%;
+  max-width: 60%;
+  min-width: 60%;
   margin: auto;
   margin-top: 120px;
-  padding: 20px;
+  padding: 30px;
   background-color: hsl(0, 0%, 100%);
   height: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .preparation-time {
@@ -71,7 +77,7 @@ p {
   margin: 0px;
 }
 .preparation-time ul {
-  padding-left: 30px;
+  padding-left: 20px;
   margin-top: 15px;
   color: hsl(332, 51%, 32%);
 }
@@ -196,15 +202,14 @@ p {
   width: 50%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .container {
     padding: 0;
     width: 100%;
     max-width: none;
     min-height: 100vh;
-    border: 2px solid blue;
     margin: 0;
-    padding: 20px; /* now included safely by border-box */
+    padding: 20px;
     border-radius: 0;
   }
 
@@ -225,7 +230,8 @@ p {
     padding: 0;
   }
 
-  h1 {
-    font-size: 1.5rem;
+  h1,
+  h2 {
+    font-size: 1.8rem;
   }
 }
