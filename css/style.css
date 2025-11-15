@@ -40,7 +40,7 @@ p {
   font-family: "Outfit", serif;
   color: hsl(30, 10%, 34%);
 }
-.container {
+.content {
   max-width: 60%;
   min-width: 60%;
   margin: auto;
@@ -70,7 +70,7 @@ img {
   padding: 20px;
   border-radius: 15px;
 }
-.preparation-time h3 {
+.preparation-time h2 {
   font-family: "Outfit", serif;
   font-weight: 500;
   color: hsl(332, 51%, 32%);
@@ -203,7 +203,7 @@ img {
 }
 
 @media screen and (max-width: 320px) {
-  .container {
+  .content {
     padding: 0;
     width: 100%;
     max-width: none;
