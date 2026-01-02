@@ -11,23 +11,20 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Four card feature section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
   </head>
   <body>
     <div class="header">
-      <h1>Reliable, efficient delivery</h1>
+      <p class="first-heading">Reliable, efficient delivery</p>
       <h1>Powered by Technology</h1>
       <p>
         Our Artificial Intelligence powered tools use millions of project data
@@ -35,51 +32,42 @@
       </p>
     </div>
 
-    <div class="card">
-      <h2>Supervisor</h2>
-      <p>Monitors activity to identify project roadblocks</p>
-      <div class="icon-supervisor">
-        <img src="./images/icon-supervisor.svg" alt="Supervisor Icon" />
+    <div class="main">
+      <div class="card supervisor">
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+        <div class="card-image">
+          <img src="./images/icon-supervisor.svg" alt="Supervisor Icon" />
+        </div>
+      </div>
+
+      <div class="vertical">
+        <div class="card team-builder">
+          <h2>Team Builder</h2>
+          <p>
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <div class="card-image">
+            <img src="./images/icon-team-builder.svg" alt="Team Builder Icon" />
+          </div>
+        </div>
+
+        <div class="card karma">
+          <h2>Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <div class="card-image">
+            <img src="./images/icon-karma.svg" alt="Karma Icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="card calculator">
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <div class="card-image">
+          <img src="./images/icon-calculator.svg" alt="Calculator Icon" />
+        </div>
       </div>
     </div>
-
-    <div class="card">
-      <h2>Team Builder</h2>
-      <p>
-        Scans our talent network to create the optimal team for your project
-      </p>
-      <div class="icon-team-builder">
-        <img src="./images/icon-team-builder.svg" alt="Team Builder Icon" />
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Karma</h2>
-      <p>Regularly evaluates our talent to ensure quality</p>
-      <div class="icon-karma">
-        <img src="./images/icon-karma.svg" alt="Karma Icon" />
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Calculator</h2>
-      <p>Uses data from past projects to provide better delivery estimates</p>
-      <div class="icon-calculator">
-        <img src="./images/icon-calculator.svg" alt="Calculator Icon" />
-      </div>
-    </div>
-    Supervisor Monitors activity to identify project roadblocks Team Builder
-    Scans our talent network to create the optimal team for your project Karma
-    Regularly evaluates our talent to ensure quality Calculator Uses data from
-    past projects to provide better delivery estimates
-
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer> -->
   </body>
 </html>
