@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  margin: 0 50px 20px 150px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 35px;
+  margin: 10px;
+  box-shadow: 20px 10px 40px 15px hsl(214, 17%, 92%);
+}
+
+.top-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-row {
+  display: flex;
+  gap: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.title {
+  color: hsl(0, 0%, 81%);
+  font-weight: 500;
+  margin-top: 3px;
+  /* font-size: 0.9em; */
+}
+.description {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.content {
+  color: hsl(214, 17%, 92%);
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("/images/bg-pattern-quotation.svg");
+  color: hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+
+.daniel .profile-image {
+  border: 2px solid hsl(264, 82%, 80%);
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.jonathan .name {
+  color: hsl(0, 0%, 81%);
+}
+
+.jonathan .title,
+.daniel .title,
+.patrick .title {
+  color: hsl(0, 0%, 81%);
+}
+
+.jeanette {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+
+.patrick .profile-image {
+  border: 2px solid hsl(264, 82%, 80%);
+}
+
+.patrick .description {
+  color: hsl(0, 0%, 81%);
+}
+
+.kira {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+}
+
+.kira .name,
+.jeanette .name {
+  color: hsl(224, 10%, 45%);
+}
+
+.kira .title,
+.jeanette .title {
+  color: hsl(228, 12%, 48%);
+  font-weight: 600;
+}
+
+.kira .description,
+.jeanette .description {
+  color: hsl(228, 12%, 48%);
+  font-weight: 600;
+}
+
+.kira .content,
+.jeanette .content {
+  color: hsl(229, 11%, 48%);
+  font-weight: 500;
+}
