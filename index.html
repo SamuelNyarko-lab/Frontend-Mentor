@@ -11,21 +11,25 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="index.js"></script>
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
     <main>
-      <div class="image">
-        <img src="images/drawers.jpg" alt="" />
-      </div>
+      <img class="drawer-image" src="images/drawers.jpg" alt="" />
 
       <div class="content">
-        <h3 class="title">
+        <h2 class="title">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
-        </h3>
+        </h2>
 
         <p class="text">
           Ever been in a room and felt like something was missing? Perhaps it
@@ -33,15 +37,34 @@
           you make any room feel complete.
         </p>
 
-        <div class="profile">
-          <div class="profile-image">
-            <img src="images/avatar-michelle.jpg" alt="" />
+        <div class="share-content">
+          <div class="share">
+            <p class="text">SHARE</p>
+
+            <div class="socials">
+              <img src="images/icon-facebook.svg" alt="" />
+              <img src="images/icon-twitter.svg" alt="" />
+              <img src="images/icon-pinterest.svg" alt="" />
+            </div>
           </div>
+          <div class="triangle-down"></div>
+        </div>
 
-          <div class="profile-details">
-            <h5 class="name">Michelle Appleton</h5>
+        <div class="footer">
+          <div class="profile">
+            <img
+              class="profile-image"
+              src="images/avatar-michelle.jpg"
+              alt=""
+            />
+            <div class="profile-details">
+              <h4 class="name">Michelle Appleton</h4>
 
-            <p class="date">28 Jun 2020</p>
+              <p class="date">28 Jun 2020</p>
+            </div>
+          </div>
+          <div class="share-button">
+            <img src="images/icon-share.svg" alt="" />
           </div>
         </div>
       </div>
