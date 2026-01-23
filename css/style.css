@@ -142,7 +142,7 @@ main {
 }
 
 /* MOBILE SCREEN */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   body {
     font-family: "Manrope", serif;
     background-color: hsl(210, 46%, 95%);

@@ -8,7 +8,7 @@ let footer = document.getElementById("footer");
 function handleLayout() {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth > 400) {
+  if (screenWidth > 500) {
     mobileShareButton.style.visibility = "hidden";
 
     shareButton.onclick = () => {
