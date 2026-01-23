@@ -82,7 +82,6 @@ main {
   position: absolute;
   left: calc(100vw - 50% + (175px));
   top: calc(100vh - 51%);
-  /* right: 38%; */
 }
 .share-button {
   height: 35px;
@@ -123,6 +122,17 @@ main {
   margin: 0 0 0 10px;
 }
 
+.mobile-share {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background-color: hsl(207, 16%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
 .triangle-down {
   width: 0;
   height: 0;
@@ -131,12 +141,23 @@ main {
   border-top: 10px solid hsl(217, 19%, 35%);
 }
 
-@media screen and (max-width: 600px) {
+/* MOBILE SCREEN */
+@media screen and (max-width: 400px) {
+  body {
+    font-family: "Manrope", serif;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin: 0;
+  }
   main {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     overflow: hidden;
     border-radius: 15px;
     width: 85%;
@@ -155,15 +176,69 @@ main {
   }
 
   .text {
-    color: hsl(212, 23%, 69%);
-    font-weight: 500;
-    margin-top: 15px;
+    font-weight: normal;
+    margin-top: 16px;
+    line-height: 1.8;
   }
-
+  .content {
+    background-color: white;
+    padding: 35px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .share {
+    min-width: 100%;
+    border-radius: 0 0 15px 15px;
+  }
+  .share-content {
+    display: none;
+    height: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    left: 0px;
+    margin: 0;
+    min-width: 100%;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .mobile-share {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: hsl(207, 16%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  .share-button {
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .triangle-down {
+    display: none;
+  }
+
+  .socials {
+    margin: 0 30px 0 0px;
   }
 }
