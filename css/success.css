@@ -24,7 +24,7 @@ body {
   align-items: center;
   margin: auto;
   height: 100vh;
-  background-color: hsl(234, 29%, 20%);
+  background-color: hsl(0, 0%, 100%);
   font-size: 16px;
   font-family: "Roboto";
 }
@@ -32,24 +32,29 @@ body {
 main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
+
 .content {
-  margin: 50px;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
-  height: auto;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.content-details {
+  margin-top: 100px;
 }
 
 .content h1 {
   color: hsl(234, 29%, 20%);
-  font-size: 3.2em;
+  font-size: 2.7em;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -81,11 +86,94 @@ button {
   color: hsl(0, 0%, 100%);
   border-radius: 8px;
   border: none;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 button:hover {
   background-color: hsl(4, 100%, 67%);
   cursor: pointer;
   background: linear-gradient(0.25turn, hsl(4, 100%, 67%), hsl(16, 100%, 67%));
+}
+
+/* Desktop and tablet screen */
+@media screen and (min-width: 650px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 16px;
+    font-family: "Roboto";
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    height: 500px;
+    width: 500px;
+  }
+  .content {
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .content-details {
+    margin-top: 0px;
+  }
+  .content h1 {
+    color: hsl(234, 29%, 20%);
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .content p {
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  .content p span {
+    color: hsl(235, 18%, 26%);
+    font-weight: bold;
+  }
+
+  .image {
+    margin-bottom: 30px;
+  }
+
+  .image img {
+    width: 60px;
+    height: 60px;
+  }
+  button {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    border: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  button:hover {
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+    background: linear-gradient(
+      0.25turn,
+      hsl(4, 100%, 67%),
+      hsl(16, 100%, 67%)
+    );
+  }
 }
