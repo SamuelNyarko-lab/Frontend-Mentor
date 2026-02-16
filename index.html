@@ -12,6 +12,8 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <script src="js/index.js" defer></script>
+
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -45,9 +47,10 @@
           <li><span>And much more!</span></li>
         </ol>
 
-        <form action="#" novalidate>
+        <!-- <form action="#" novalidate>
           <div>
-            <label for="email">Email address</label><br />
+            <label for="email">Email address</label
+            ><span class="error-message">Error</span><br />
             <input
               type="email"
               placeholder="email@company.com"
@@ -57,6 +60,25 @@
           </div>
 
           <button>Subscribe to monthly newsletter</button>
+        </form> -->
+
+        <form id="form" action="#" novalidate>
+          <div>
+            <div class="label-content">
+              <label for="email">Email address</label>
+              <p id="error-message"></p>
+              <br />
+            </div>
+            <input
+              type="email"
+              placeholder="email@company.com"
+              id="email"
+              name="email"
+              autocomplete="off"
+            />
+          </div>
+
+          <button id="submitbtn">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </main>
