@@ -147,6 +147,12 @@ button:hover {
   cursor: pointer;
   background: linear-gradient(0.25turn, hsl(4, 100%, 67%), hsl(16, 100%, 67%));
 }
+
+.error-state {
+  border: 1px solid hsl(4, 100%, 67%);
+  background-color: hsl(4, 92%, 90%);
+  color: hsl(4, 100%, 67%);
+}
 /* display: block;
   width: 50%;
   height: auto;
