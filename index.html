@@ -1,50 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/fonts.css">
-    <title>Frontend Mentor | Time tracking dashboard</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-   <script src="index.js" defer></script>
-    </style>
-  </head>
-  <body>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
 
-<main>
-  <div class="container">
-    <div class="title-card">
-      <div class="profile">
-        <div class="profile-image">
-          <img src="images/image-jeremy.png" alt="">
+  <script src="index.js" defer></script>
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div id="container">
+      <div class="profile-card">
+        <div class="profile">
+          <div class="profile-image">
+            <img src="images/image-jeremy.png" alt="">
+          </div>
+
+          <div class="profile-details">
+            <p class="report">Report for</p>
+
+            <p class="profile-name">Jeremy Robson</p>
+          </div>
         </div>
+        <div class="times-card">
 
-        <div class="profile-details">
-          <p class="report">Report for</p>
-
-          <p class="profile-name">Jeremy Robson</p>
+          <div class="timeframes-titles">
+            <p id="daily">Daily</p>
+            <p id="weekly" class="activetitle">Weekly</p>
+            <p id="monthly">Monthly</p>
+          </div>
         </div>
       </div>
-      <div class="times-card">
 
-        <div class="timeframes">
-<p id="daily">Daily</p>
-<p id="weekly">Weekly</p>
-<p id="monthly">Monthly</p>
-        </div>
+
+      <div id="data-container">
 
       </div>
+
+      <!-- <div class="timeframes-card">
+        <div id="image-card">
+          <img src="images/icon-work.svg" alt="" id="time-icon">
+        </div>
+
+        <div class="data-card">
+
+          <div class="title-card">
+            <p id="title">Work</p>
+            <div class="menu-icon">
+              <img src="images/icon-ellipsis.svg" alt="" id="menu-img">
+            </div>
+          </div>
+
+
+          <div id="data-section">
+            <p id="current">
+              4000hrs
+            </p>
+
+            <p id="previous">Last Week - 7hrs</p>
+          </div>
+        </div>
+      </div> -->
     </div>
-  </div>
-</main>
-  </body>
+  </main>
+</body>
+
 </html>
