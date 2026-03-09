@@ -36,10 +36,10 @@ main {
   flex-direction: column;
 }
 
-#container {
+/* #container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .profile-card {
   display: flex;
@@ -52,7 +52,7 @@ main {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 30px;
   border-radius: 15px;
   background-color: hsl(246, 80%, 60%);
@@ -75,7 +75,7 @@ main {
 .profile-name {
   font-weight: 300;
   font-size: 1.5rem;
-  color: var(--navy200);
+  color: var(--white);
   margin-top: 10px;
 }
 
@@ -127,7 +127,7 @@ main {
 }
 
 #image-card {
-  min-height: 80px;
+  min-height: 85px;
   background-color: white;
   border-radius: 15px;
   display: flex;
@@ -155,6 +155,11 @@ main {
   z-index: 5;
   margin-top: -40px;
   overflow: hidden;
+}
+
+.data-card:hover {
+  background-color: hsl(235, 46%, 40%);
+  cursor: pointer;
 }
 
 .title-card {
@@ -186,4 +191,192 @@ main {
   font-weight: 400;
   color: var(--purple500);
   font-size: 0.8em;
+}
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    height: 100%;
+    height: 55%;
+    margin-top: 0px;
+  }
+
+  /* #container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    height: 100%;
+  } */
+
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    margin-bottom: 0px;
+
+  }
+
+  .profile {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: hsl(246, 80%, 60%);
+    z-index: 5;
+  }
+
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-image {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 40px;
+  }
+
+  .profile-image img {
+    height: 80px;
+    width: 80px;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+  }
+
+  .profile-name {
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-top: 5px;
+  }
+
+  #data-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: stretch;
+    margin-bottom: -40px; */
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    column-gap: 30px;
+  }
+
+  .times-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px 20px 30px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: var(--navy900);
+    z-index: 2;
+    margin-top: -40px;
+  }
+
+  .timeframes-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+  }
+
+  .timeframes-titles p {
+    color: var(--purple500);
+    margin-top: 20px;
+  }
+
+  .timeframes-titles p:hover {
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .timeframes-titles .activetitle {
+    color: var(--white);
+  }
+
+
+  .timeframes-card {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #image-card {
+    height: 80px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    background-color: var(--work);
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    /* background-image: url("images/icon-work.svg"); */
+  }
+
+  #time-icon {
+    /* height: 60px; */
+    margin-right: 20px;
+    margin-top: -8px;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .data-card {
+    background-color: var(--navy900);
+    border-radius: 15px;
+    padding: 30px;
+    z-index: 5;
+    margin-top: -40px;
+    overflow: hidden;
+  }
+
+  .title-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #title {
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  #data-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  #current {
+    margin-top: 10px;
+    font-size: 2.8em;
+    font-weight: 300;
+    color: var(--white);
+  }
+
+  #previous {
+    font-weight: 400;
+    color: var(--purple500);
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
 }
