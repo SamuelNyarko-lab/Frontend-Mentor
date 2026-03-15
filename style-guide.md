@@ -11,13 +11,17 @@ The designs were created to the following widths:
 
 ## Colors
 
-- Green: hsl(75, 94%, 57%)
+### Primary
 
+- Green 500: hsl(158, 36%, 37%)
+- Green 700: hsl(158, 42%, 18%)
+
+### Neutral
+
+- Black: hsl(212, 21%, 14%)
+- Grey: hsl(228, 12%, 48%)
+- Cream: hsl(30, 38%, 92%)
 - White: hsl(0, 0%, 100%)
-
-- Grey 700: hsl(0, 0%, 20%)
-- Grey 800: hsl(0, 0%, 12%)
-- Grey 900: hsl(0, 0%, 8%)
 
 ## Typography
 
@@ -27,7 +31,10 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 600, 700
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
 
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a basic design system to help you build a more accurate solution faster.
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.

@@ -3,57 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>Frontend Mentor | Social links profile</title>
-
-    <style></style>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <img src="assets/images/avatar-jessica.jpeg" alt="" />
+    <main>
+      <div class="image"></div>
 
-        <h3>Samuel Nyarko</h3>
-        <p class="location">Accra, Ghana</p>
+      <div class="content">
+        <h5>PERFUME</h5>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
 
-        <p class="description">"Front-end developer and avid reader."</p>
-      </header>
-
-      <div class="links">
-        <a href="https://github.com/SamuelNyarko-lab" target="_blank">GitHub</a>
-        <a
-          href="https://www.frontendmentor.io/profile/SamuelNyarko-lab"
-          target="_blank"
-          >Frontend Mentor</a
-        >
-        <a
-          href="https://www.linkedin.com/in/samuel-nyarko-13b425160/"
-          target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://x.com/kwa_bena18?s=21" target="_blank">Twitter</a>
-        <a href="https://samuelnyarko.netlify.app/" target="_blank"
-          >Flutter Portfolio</a
-        >
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <span class="new-price">$149.99</span>
+          <span class="old-price">$169.99</span>
+        </div>
+        <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
       </div>
-    </div>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://samuelnyarko.netlify.app" target="_blank"
-        >Samuel Nyarko</a
-      >
-    </div> -->
+    </main>
   </body>
 </html>

@@ -1,133 +1,136 @@
 * {
   margin: 0;
-  padding: 0;
+  border: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
-}
-
 body {
-  background-color: hsl(0, 0%, 8%);
-  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  font-family: "Inter", Helvetica, sans-serif;
-}
-body p {
+  height: 100vh;
+  font-family: "Montserrat", serif;
   font-size: 14px;
 }
 
-.container {
-  width: 370px;
-  height: auto;
-  padding: 40px;
-  margin-bottom: 20px;
+main {
+  background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background-color: hsl(0, 0%, 12%);
-}
-
-header {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-header img {
-  width: 40%;
+  overflow: hidden;
+  width: 600px;
+  max-width: 90%;
   height: auto;
-  margin-bottom: 20px;
-  display: inline-block;
-  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
 }
 
-header h3 {
-  color: hsl(0, 0%, 100%);
-  margin-bottom: 10px;
-  font-weight: 600;
+.image {
+  width: 50%;
+  height: auto;
+  background-image: url("/images/image-product-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 0px 0px 15px;
 }
-
-header .location {
-  color: hsl(75, 94%, 57%);
-  margin-bottom: 20px;
-}
-
-header .description {
-  color: hsl(0, 0%, 100%);
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.links {
-  width: 100%;
+.content {
+  padding: 30px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
 }
 
-.links a {
-  text-decoration: none;
+.content h5 {
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.content h1 {
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-family: "Fraunces", serif;
+  font-size: 2.4em;
+}
+
+.description {
+  color: hsl(229, 11%, 48%);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-right: 20px;
+  font-family: "Fraunces", serif;
+}
+.old-price {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
-  font-weight: 500;
-  background-color: hsl(0, 0%, 20%);
-  margin-bottom: 15px;
-  padding: 15px;
   border-radius: 10px;
+  padding: 15px;
+  font-weight: 700;
+  border: none;
+  font-size: 1em;
 }
 
-.links a:hover {
-  background-color: hsl(75, 94%, 57%);
-  color: hsl(0, 0%, 8%);
-  font-weight: 500;
+button:hover {
+  background-color: hsl(158, 36%, 25%);
   cursor: pointer;
 }
 
-/* Mobile responsiveness */
+button i {
+  margin-right: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: large;
+}
+
 @media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
   body {
-    background-color: hsl(0, 0%, 8%);
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+  }
+  main {
+    width: 90%;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    font-family: "Inter", Helvetica, sans-serif;
   }
-  body p {
-    font-size: 14px;
-  }
-  .links {
+
+  .image {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    aspect-ratio: 4 / 3;
+    background-image: url("../images/image-product-mobile.jpg");
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
   }
-
-  .links a {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-weight: 500;
-    background-color: hsl(0, 0%, 20%);
-    margin-bottom: 15px;
-    padding: 15px;
-    border-radius: 10px;
+  .content {
+    padding: 30px;
+    width: 100%;
   }
-
-  .links a:hover {
-    background-color: hsl(75, 94%, 57%);
-    color: hsl(0, 0%, 8%);
+  .content h5 {
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 10px;
     font-weight: 500;
-    cursor: pointer;
   }
 }
