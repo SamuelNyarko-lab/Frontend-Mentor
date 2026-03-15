@@ -13,28 +13,26 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Green 500: hsl(158, 36%, 37%)
-- Green 700: hsl(158, 42%, 18%)
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
 
 ### Neutral
 
-- Black: hsl(212, 21%, 14%)
-- Grey: hsl(228, 12%, 48%)
-- Cream: hsl(30, 38%, 92%)
+- Grey 500: hsl(234, 12%, 34%)
+- Grey 400: hsl(212, 6%, 44%)
 - White: hsl(0, 0%, 100%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 14px
+- Font size: 15px
 
-### Font
+### Fonts
 
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weights: 500, 700
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
 
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700
-
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster.
