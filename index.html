@@ -1,105 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <script src="js/index.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+  <script src="index.js" defer></script>
+  </style>
+</head>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style></style>
-  </head>
-  <body>
-    <!-- Sign-up form start -->
+<body>
 
-    <main>
-      <div class="image">
-        <!-- <img src="assets/images/illustration-sign-up-desktop.svg" alt="" /> -->
+  <main id="container">
+    <div class="profile-card">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="images/image-jeremy.png" alt="">
+        </div>
+
+        <div class="profile-details">
+          <p class="report">Report for</p>
+
+          <p class="profile-name">Jeremy Robson</p>
+        </div>
       </div>
-      <div class="content">
-        <h1 class="title">Stay updated!</h1>
+      <div class="times-card">
 
-        <p class="description">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-
-        <ol>
-          <li><span>Product discovery and building what matters</span></li>
-          <li><span>Measuring to ensure updates are a success</span></li>
-          <li><span>And much more!</span></li>
-        </ol>
-
-        <!-- <form action="#" novalidate>
-          <div>
-            <label for="email">Email address</label
-            ><span class="error-message">Error</span><br />
-            <input
-              type="email"
-              placeholder="email@company.com"
-              class="email-field"
-              id="email"
-            />
-          </div>
-
-          <button>Subscribe to monthly newsletter</button>
-        </form> -->
-
-        <form id="form" action="#" novalidate>
-          <div>
-            <div class="label-content">
-              <label for="email">Email address</label>
-              <p id="error-message"></p>
-              <br />
-            </div>
-            <input
-              type="email"
-              placeholder="email@company.com"
-              id="email"
-              name="email"
-              autocomplete="off"
-            />
-          </div>
-
-          <button id="submitbtn">Subscribe to monthly newsletter</button>
-        </form>
+        <div class="timeframes-titles">
+          <p id="daily">Daily</p>
+          <p id="weekly" class="activetitle">Weekly</p>
+          <p id="monthly">Monthly</p>
+        </div>
       </div>
-    </main>
+    </div>
 
-    <!--  
+    <div id="data-container">
+    </div>
+  </main>
+</body>
 
-     Sign-up form end -->
-
-    <!-- Success message start 
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
-    Success message end 
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>-->
-  </body>
 </html>
