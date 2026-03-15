@@ -11,21 +11,10 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
-
-- Purple 50: hsl(260, 100%, 95%)
-- Purple 300: hsl(264, 82%, 80%)
-- Purple 500: hsl(263, 55%, 52%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Grey 100: hsl(214, 17%, 92%)
-- Grey 200: hsl(0, 0%, 81%)
-- Grey 400: hsl(224, 10%, 45%)
-- Grey 500: hsl(217, 19%, 35%)
-- Dark blue: hsl(219, 29%, 14%)
-- Black: hsl(0, 0%, 7%)
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
 
 ## Typography
 
@@ -33,9 +22,17 @@ The designs were created to the following widths:
 
 - Font size: 13px
 
-### Font
+### Headings
 
-- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
-- Weights: 500, 600
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 500, 700
+
+## Icons
+
+We provide SVGs for the social icons. But please feel free to use a font icon library if you like. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
