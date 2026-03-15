@@ -9,67 +9,97 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
+
+    <script src="js/index.js" defer></script>
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="index.js"></script>
-    <title>Frontend Mentor | Article preview component</title>
+    <style></style>
   </head>
   <body>
+    <!-- Sign-up form start -->
+
     <main>
-      <img class="drawer-image" src="images/drawers.jpg" alt="" />
-
+      <div class="image">
+        <!-- <img src="assets/images/illustration-sign-up-desktop.svg" alt="" /> -->
+      </div>
       <div class="content">
-        <h2 class="title">
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h2>
+        <h1 class="title">Stay updated!</h1>
 
-        <p class="text">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
+        <p class="description">
+          Join 60,000+ product managers receiving monthly updates on:
         </p>
 
-        <div class="footer" id="footer">
-          <div class="profile">
-            <img
-              class="profile-image"
-              src="images/avatar-michelle.jpg"
-              alt=""
+        <ol>
+          <li><span>Product discovery and building what matters</span></li>
+          <li><span>Measuring to ensure updates are a success</span></li>
+          <li><span>And much more!</span></li>
+        </ol>
+
+        <!-- <form action="#" novalidate>
+          <div>
+            <label for="email">Email address</label
+            ><span class="error-message">Error</span><br />
+            <input
+              type="email"
+              placeholder="email@company.com"
+              class="email-field"
+              id="email"
             />
-            <div class="profile-details">
-              <h4 class="name">Michelle Appleton</h4>
+          </div>
 
-              <p class="date">28 Jun 2020</p>
+          <button>Subscribe to monthly newsletter</button>
+        </form> -->
+
+        <form id="form" action="#" novalidate>
+          <div>
+            <div class="label-content">
+              <label for="email">Email address</label>
+              <p id="error-message"></p>
+              <br />
             </div>
+            <input
+              type="email"
+              placeholder="email@company.com"
+              id="email"
+              name="email"
+              autocomplete="off"
+            />
           </div>
-          <div class="share-button" id="share-button">
-            <img src="images/icon-share.svg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="share-content">
-        <div class="share">
-          <p class="text">SHARE</p>
 
-          <div class="socials">
-            <img src="images/icon-facebook.svg" alt="" />
-            <img src="images/icon-twitter.svg" alt="" />
-            <img src="images/icon-pinterest.svg" alt="" />
-          </div>
-          <div class="mobile-share" id="mobile-share">
-            <img src="images/icon-share.svg" alt="" />
-          </div>
-        </div>
-        <div class="triangle-down"></div>
+          <button id="submitbtn">Subscribe to monthly newsletter</button>
+        </form>
       </div>
     </main>
+
+    <!--  
+
+     Sign-up form end -->
+
+    <!-- Success message start 
+
+    Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message
+
+    Success message end 
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>-->
   </body>
 </html>
