@@ -194,6 +194,18 @@ main {
 }
 
 
+/* Tablet resizing */
+@media screen and (min-width: 430px) {
+  main {
+    width: 70%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Desktop sizing */
 @media screen and (min-width: 1024px) {
   body {
     display: flex;
