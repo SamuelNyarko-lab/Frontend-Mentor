@@ -41,6 +41,19 @@ main {
   flex-direction: column;
 } */
 
+
+#error-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#error-text {
+  color: var(--white);
+  font-size: 2em;
+  text-align: center;
+}
+
 .profile-card {
   display: flex;
   flex-direction: column;
@@ -194,6 +207,18 @@ main {
 }
 
 
+/* Tablet resizing */
+@media screen and (min-width: 430px) {
+  main {
+    width: 70%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Desktop sizing */
 @media screen and (min-width: 1024px) {
   body {
     display: flex;
@@ -209,6 +234,12 @@ main {
     height: 100%;
     height: 55%;
     margin-top: 0px;
+  }
+
+  #error-text {
+    color: var(--white);
+    font-size: 3em;
+    text-align: center;
   }
 
   /* #container {
