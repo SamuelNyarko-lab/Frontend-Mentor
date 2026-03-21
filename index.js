@@ -6,6 +6,7 @@
 const fetchDataPromise = fetch("data.json");
 
 let dataContainer = document.getElementById("data-container");
+let mainContainer = document.getElementById("container");
 
 let dailyItem = document.getElementById("daily");
 let weeklyItem = document.getElementById("weekly");
@@ -69,16 +70,9 @@ fetchDataPromise
     return response.json(); //convert response to json object
   })
   .then((data) => {
-    //console.log(data);
-
-    //console.log(appendItem(data[0]));
-
     timeData = data;
-    console.log(timeData);
 
     for (const element of data) {
-      // console.log(element.title.toLowerCase());
-
       appendItem(element);
       let timeFramesImageCard = document.querySelector(
         `.${element["title"].split(" ").join("-").toLowerCase()}`,
@@ -86,12 +80,13 @@ fetchDataPromise
 
       timeFramesImageCard.style.backgroundColor =
         cardColors[element["title"].toLowerCase()];
-
-      //console.log(cardColors[element["title"].toLowerCase()]);
-      // console.log(timeFramesImageCard);
     }
   })
   .catch((error) => {
+    //  mainContainer.innerHTML = `<p id="error-text">404. Data Not Found</p>`;
+    mainContainer.innerHTML = `<div id="error-container">
+      <p id="error-text">404. Data Not Found</p>
+    </div>`;
     console.error(`Data not found because ${error}`);
   });
 
