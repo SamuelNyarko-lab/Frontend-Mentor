@@ -1,24 +1,24 @@
 console.log("Hi");
 
-let form = document.querySelector("form");
+const form = document.querySelector("form");
 
-let bill = document.getElementById("bill");
+const bill = document.getElementById("bill");
 
-let customTip = document.getElementById("customTip");
+const customTip = document.getElementById("customTip");
 
-let numberOfPeople = document.getElementById("people");
+const numberOfPeople = document.getElementById("people");
 
-let resetButton = document.getElementById("reset-button");
+const resetButton = document.getElementById("reset-button");
 
-let error = document.querySelector(".error-message");
+const error = document.querySelector(".error-message");
 
-let tipAmount = document.getElementById("tip-amount");
+const tipAmount = document.getElementById("tip-amount");
 
-let totalAmount = document.getElementById("total-amount");
+const totalAmount = document.getElementById("total-amount");
 
 const tipDetails = document.querySelector(".tip-details");
 
-const buttons = container.querySelectorAll("button");
+const buttons = tipDetails.querySelectorAll("button");
 
 tipAmount.textContent = "0.00";
 totalAmount.textContent = "0.00";
@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
 // Reset Button
 resetButton.disabled = true;
 
-resetButton.addEventListener("click", (e) => {
+resetButton.addEventListener("click", () => {
   tipAmount.textContent = "0.00";
   totalAmount.textContent = "0.00";
   billValue = 0;
@@ -97,17 +97,17 @@ numberOfPeople.addEventListener("input", (e) => {
 });
 
 // Calculation Functions
-function tipAmountTotal(bill, tipPercentage) {
-  const tipValue = (bill * tipPercentage) / 100;
+function tipAmountTotal(billAmount, tipPercentage) {
+  const tipValue = (billAmount * tipPercentage) / 100;
   return Number(tipValue.toFixed(2));
 }
 
-function totalCost(bill, tipAmount, numberOfPeople) {
+function totalCost(billAmount, tipAmountValue, numberOfPeople) {
   if (!numberOfPeople || numberOfPeople <= 0) {
     return "0.00";
   }
 
-  const total = (bill + tipAmount) * numberOfPeople;
+  const total = (billAmount + tipAmountValue) * numberOfPeople;
   return total.toFixed(2);
 }
 
@@ -148,11 +148,11 @@ const clearError = () => {
 
 function convertPercentageToNumber(value) {
   value = value.replace("%", "");
-  value = Number.isNaN(value) == false ? Number(value) : 0; //Checks if value is not a number and sets zero to it
+  value = Number.isNaN(value) === false ? Number(value) : 0; //Checks if value is not a number and sets zero to it
   return value;
 }
 
 function convertToNumber(value) {
-  value = Number.isNaN(value) == false ? Number(value) : 0; //Checks if value is not a number and sets zero to it
+  value = Number.isNaN(value) === false ? Number(value) : 0; //Checks if value is not a number and sets zero to it
   return value;
 }
