@@ -62,7 +62,7 @@ tipDetails.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
     // remove active from all buttons
     buttons.forEach((btn) => btn.classList.remove("active"));
-    customTip.value = "";
+    customTip.value = convertPercentageToNumber(e.target.textContent);
     // add active to clicked button
     e.target.classList.add("active");
     // console.log(e.target.textContent);
@@ -97,8 +97,12 @@ numberOfPeople.addEventListener("input", (e) => {
 });
 
 // Calculation Functions
-function tipAmountTotal(billAmount, tipPercentage) {
-  const tipValue = (billAmount * tipPercentage) / 100;
+function tipAmountTotal(billAmount, tipPercentage, numberOfPeople) {
+  if (!numberOfPeople || numberOfPeople <= 0) {
+    return "0.00";
+  }
+
+  const tipValue = (billAmount * tipPercentage) / 100 / numberOfPeople;
   return Number(tipValue.toFixed(2));
 }
 
@@ -112,7 +116,7 @@ function totalCost(billAmount, tipAmountValue, numberOfPeople) {
 }
 
 function calculateTotals() {
-  tip = tipAmountTotal(billValue, percentageValue);
+  tip = tipAmountTotal(billValue, percentageValue, peopleValue);
   tipAmount.textContent = tip.toFixed(2);
   totalAmount.textContent = totalCost(billValue, tip, peopleValue);
 }
