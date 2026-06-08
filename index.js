@@ -107,7 +107,7 @@ function totalCost(billAmount, tipAmountValue, numberOfPeople) {
     return "0.00";
   }
 
-  const total = (billAmount + tipAmountValue) * numberOfPeople;
+  const total = (billAmount + tipAmountValue) / numberOfPeople;
   return total.toFixed(2);
 }
 
