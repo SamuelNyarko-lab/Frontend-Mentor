@@ -50,8 +50,12 @@ resetButton.addEventListener("click", () => {
 //Listener for bill field
 bill.addEventListener("input", (e) => {
   resetButton.disabled = false;
-  const value = Number(e.target.value);
+  const digitsOnly = e.target.value.replace(/\D/g, "");
+  if (digitsOnly !== e.target.value) {
+    e.target.value = digitsOnly;
+  }
 
+  const value = Number(digitsOnly);
   billValue = convertToNumber(value);
 
   calculateTotals();
@@ -62,7 +66,7 @@ tipDetails.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
     // remove active from all buttons
     buttons.forEach((btn) => btn.classList.remove("active"));
-    customTip.value = convertPercentageToNumber(e.target.textContent);
+    //customTip.value = convertPercentageToNumber(e.target.textContent);
     // add active to clicked button
     e.target.classList.add("active");
     // console.log(e.target.textContent);
@@ -83,12 +87,21 @@ customTip.addEventListener("input", (e) => {
 
 //Listener for number of people field
 numberOfPeople.addEventListener("input", (e) => {
-  const value = Number(e.target.value);
+
+  const value = e.target.value;
   peopleValue = convertToNumber(value);
 
-  if (!peopleValue || peopleValue <= 0) {
+  const digitsOnly = e.target.value.replace(/\D/g, "");
+  if (digitsOnly !== e.target.value) {
+    e.target.value = digitsOnly;
+  }
+  if (value === "" || peopleValue === 0) {
     resetButton.disabled = true;
-    renderError();
+    if (value === "") {
+      clearError();
+    } else {
+      renderError();
+    }
   } else {
     resetButton.disabled = false;
     clearError();
