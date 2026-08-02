@@ -1,102 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/font.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
 
-  <title>Frontend Mentor | Tip calculator app</title>
-  <script src="index.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
-
 <body>
-  <header id="title">
-    <img src="images/logo.svg" alt="">
-  </header>
 
-  <main id="container">
-    <form id="form" novalidate>
-      <div class="inputs">
-        <div class="bill-details">
-          <label for="bill">
-            Bill
-          </label>
-          <br>
-          <div class="input-wrapper">
-            <img src="images/icon-dollar.svg" alt="dollar icon" class="input-icon">
-            <input type="text" name="bill" id="bill" placeholder="0">
-          </div>
-        </div>
+  <!-- Rating state start -->
 
-        <div class="tip-details">
-          <label for="customTip">Select Tip %</label><br>
-          <div class="tip-details-items">
-            <button type="button">5%</button>
-            <button type="button">10%</button>
-            <button type="button">15%</button>
-            <button type="button">25%</button>
-            <button type="button">50%</button>
-            <input type="text" name="customTip" id="customTip" placeholder="Custom">
-          </div>
+  How did we do?
 
+  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
 
-        </div>
+  1 2 3 4 5
 
-        <div id="people-details">
-          <label for="people">
-            Number of People <span class="error-message"></span>
-          </label>
-          <br>
-          <div class="input-wrapper">
-            <img src="images/icon-person.svg" alt="person icon" class="input-icon">
-            <input type="text" name="people" id="people" placeholder="0">
-          </div>
-        </div>
-      </div>
+  Submit
 
+  <!-- Rating state end -->
 
-      <div class="results-card">
-        <div>
-          <div id="tip-container">
-            <div class="result-label">
-              <p class="main-label">
-                Tip Amount
-              </p>
+  <!-- Thank you state start -->
 
-              <p class="unit">/ person</p>
-            </div>
+  You selected <!-- Add rating here --> out of 5
 
-            <p id="tip-amount" class="result-amount">
+  Thank you!
 
-            </p>
-          </div>
-          <div id="total-container">
-            <div class="result-label">
-              <p class="main-label">
-                Total
-              </p>
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
 
-              <p class="unit">/ person</p>
-            </div>
+  <!-- Thank you state end -->
 
-            <p id="total-amount" class="result-amount">
-
-            </p>
-          </div>
-        </div>
-
-
-        <button type="submit" id="reset-button">RESET</button>
-
-
-      </div>
-    </form>
-  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
 </body>
-
 </html>
